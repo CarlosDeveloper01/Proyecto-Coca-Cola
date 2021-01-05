@@ -1,0 +1,29 @@
+Significado cvfm
+c: indica que se va a crear un archivo jar
+v: genera la salida del archivo jar
+f: especifica el nombre del archivo jar
+m: indica que se agregara un archivo de manifiesto
+
+Comandos para crear archivo jar:
+
+jar cvfm nombre del programa.jar agregar manifiesto.mf agregar las clases y las imagenes. Por ejemplo:
+
+jar cvfm Sistema Coca-Cola.jar manifest.mf Bienvenida.class Licencia.class Principal.class images/coca-cola.png images/icon.png images/logo-coca.png images/coca-cola-blanco.png
+
+Damos enter y aparecera lo siguiente:
+
+manifiesto agregado
+agregando: Bienvenida.class(entrada = 3353) (salida = 1867)(desinflado 44%)
+agregando: Licencia.class(entrada = 4661) (salida = 2556)(desinflado 45%)
+agregando: Principal.class(entrada = 9443) (salida = 4379)(desinflado 53%)
+agregando: images/coca-cola.png(entrada = 23105) (salida = 22507)(desinflado 2%)
+agregando: images/icon.png(entrada = 43228) (salida = 41899)(desinflado 3%)
+agregando: images/logo-coca.png(entrada = 32249) (salida = 31677)(desinflado 1%)
+agregando: images/coca-cola-blanco.png(entrada = 39976) (salida = 36283)(desinflado 9%)
+
+Luego escribimos lo siguiente para crear el archivo jar:
+
+java -jar nombre del programa que especificaste anteriormente.jar
+Por ejemplo:
+
+java -jar Coca-Cola.jar
